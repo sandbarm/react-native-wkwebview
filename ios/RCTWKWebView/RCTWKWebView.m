@@ -66,7 +66,6 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
     WKWebViewConfiguration* config = [[WKWebViewConfiguration alloc] init];
     config.processPool = processPool;
     WKUserContentController* userController = [[WKUserContentController alloc]init];
-    [userController addScriptMessageHandler:[[WeakScriptMessageDelegate alloc] initWithDelegate:self] name:self.messageHandler ? self.messageHandler : @"reactNative"];
     config.userContentController = userController;
 
     _webView = [[WKWebView alloc] initWithFrame:self.bounds configuration:config];
@@ -89,6 +88,20 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
   }
   return self;
 }
+
+- (void)setMessageHandler:(NSString *)messageHandler {
+  if ([_messageHandler isEqualToString:messageHandler]) {
+    return;
+  }
+  if (_messageHandler) {
+    [_webView.configuration.userContentController removeScriptMessageHandlerForName:_messageHandler];
+  }
+  if (messageHandler) {
+    [_webView.configuration.userContentController addScriptMessageHandler:[[WeakScriptMessageDelegate alloc] initWithDelegate:self] name:messageHandler];
+  }
+  _messageHandler = messageHandler;
+}
+
 
 - (void)setInjectJavaScript:(NSString *)injectJavaScript {
   _injectJavaScript = injectJavaScript;
