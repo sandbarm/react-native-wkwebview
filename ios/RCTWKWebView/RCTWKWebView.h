@@ -28,6 +28,7 @@ shouldStartLoadForRequest:(NSMutableDictionary<NSString *, id> *)request
 
 @property (nonatomic, copy) NSDictionary *source;
 @property (nonatomic, assign) UIEdgeInsets contentInset;
+@property (nonatomic, copy) NSString *messageHandler;
 @property (nonatomic, assign) BOOL automaticallyAdjustContentInsets;
 @property (nonatomic, assign) BOOL messagingEnabled;
 @property (nonatomic, assign) BOOL allowsLinkPreview;
