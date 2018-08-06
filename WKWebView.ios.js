@@ -200,6 +200,10 @@ class WKWebView extends React.Component {
     startInLoadingState: PropTypes.bool,
     style: ViewPropTypes.style,
     /**
+     * Sets the name of the message handler.
+     */
+    messageHandler: PropTypes.string,
+    /**
      * If false injectJavaScript will run both main frame and iframe
      * @platform ios
      */
@@ -328,6 +332,7 @@ class WKWebView extends React.Component {
         ref={ref => { this.webview = ref; }}
         key="webViewKey"
         style={webViewStyles}
+        messageHandler={this.props.messageHandler}
         contentInsetAdjustmentBehavior={this.props.contentInsetAdjustmentBehavior}
         source={resolveAssetSource(source)}
         injectJavaScriptForMainFrameOnly={this.props.injectJavaScriptForMainFrameOnly}

@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "react-native-wkwebview-reborn@file:../",
+        "raw": "react-native-wkwebview-xyz@file:../",
         "scope": null,
-        "escapedName": "react-native-wkwebview-reborn",
-        "name": "react-native-wkwebview-reborn",
+        "escapedName": "react-native-wkwebview-xyz",
+        "name": "react-native-wkwebview-xyz",
         "rawSpec": "file:../",
         "spec": "/Users/insraq/Projects/react-native-wkwebview",
         "type": "directory"
@@ -14,15 +14,15 @@
     ]
   ],
   "_from": "..",
-  "_id": "react-native-wkwebview-reborn@1.2.0",
+  "_id": "react-native-wkwebview-xyz@1.2.1",
   "_inCache": true,
-  "_location": "/react-native-wkwebview-reborn",
+  "_location": "/react-native-wkwebview-xyz",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-wkwebview-reborn@file:../",
+    "raw": "react-native-wkwebview-xyz@file:../",
     "scope": null,
-    "escapedName": "react-native-wkwebview-reborn",
-    "name": "react-native-wkwebview-reborn",
+    "escapedName": "react-native-wkwebview-xyz",
+    "name": "react-native-wkwebview-xyz",
     "rawSpec": "file:../",
     "spec": "/Users/insraq/Projects/react-native-wkwebview",
     "type": "directory"
@@ -33,7 +33,7 @@
   "_resolved": "file:..",
   "_shasum": "810755db27687d6f5178c2ed44e700e96a558f26",
   "_shrinkwrap": null,
-  "_spec": "react-native-wkwebview-reborn@file:../",
+  "_spec": "react-native-wkwebview-xyz@file:../",
   "_where": "/Users/insraq/Projects/react-native-wkwebview/example",
   "author": {
     "name": "Ruoyu Sun",
@@ -58,7 +58,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "react-native-wkwebview-reborn",
+  "name": "react-native-wkwebview-xyz",
   "optionalDependencies": {},
   "peerDependencies": {
     "prop-types": "^15.6.0"
@@ -74,8 +74,8 @@
   },
   "scripts": {
     "lint": "eslint --ext .js --ext .jsx .",
-    "sync-from-example": "cp ./example/node_modules/react-native-wkwebview-reborn/*.js ./;cp -r ./example/node_modules/react-native-wkwebview-reborn/ios ./",
-    "sync-to-example": "cp ./*.js ./example/node_modules/react-native-wkwebview-reborn/;cp -r ./ios ./example/node_modules/react-native-wkwebview-reborn/"
+    "sync-from-example": "cp ./example/node_modules/react-native-wkwebview-xyz/*.js ./;cp -r ./example/node_modules/react-native-wkwebview-xyz/ios ./",
+    "sync-to-example": "cp ./*.js ./example/node_modules/react-native-wkwebview-xyz/;cp -r ./ios ./example/node_modules/react-native-wkwebview-xyz/"
   },
-  "version": "1.21.0"
+  "version": "1.21.1"
 }
