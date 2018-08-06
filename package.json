@@ -77,5 +77,5 @@
     "sync-from-example": "cp ./example/node_modules/react-native-wkwebview-xyz/*.js ./;cp -r ./example/node_modules/react-native-wkwebview-xyz/ios ./",
     "sync-to-example": "cp ./*.js ./example/node_modules/react-native-wkwebview-xyz/;cp -r ./ios ./example/node_modules/react-native-wkwebview-xyz/"
   },
-  "version": "1.21.2"
+  "version": "1.21.3"
 }
